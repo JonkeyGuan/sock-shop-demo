@@ -29,27 +29,27 @@ Unless mentioned, each image is cross-compiled in s390x, amd64, arm64, and ppc64
 
 There are three diferent kustomizations: fyre, multi, multi-hpa. multi-hpa is a HoriztonalPodAutoScaler version where the front-end autoscales.
 
-*fyre* 
+*jonkey* 
 
 To deploy to fyre, use the following:
 
-1. Update manifests/overlays/fyre/env.secret with username and password:
+1. Update manifests/overlays/jonkey/env.secret with username and password:
 
 ```
 username=
 password=
 ```
 
-2. Build sock shop for fyre:
+2. Build sock shop for jonkey:
 
 ```
-❯ kustomize build manifests/overlays/fyre | oc apply -f - 
+❯ kustomize build manifests/overlays/jonkey | oc apply -f - 
 ```
 
-3. Destroy sock shop for fyre:
+3. Destroy sock shop for jonkey:
 
 ```
-❯ kustomize build manifests/overlays/fyre | oc delete -f - 
+❯ kustomize build manifests/overlays/jonkey | oc delete -f - 
 ```
 
 *multiarch compute*
