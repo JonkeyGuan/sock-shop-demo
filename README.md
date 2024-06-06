@@ -31,7 +31,7 @@ There are three diferent kustomizations: fyre, multi, multi-hpa. multi-hpa is a 
 
 *jonkey* 
 
-To deploy to fyre, use the following:
+To deploy to jonkey, use the following:
 
 1. Update manifests/overlays/jonkey/env.secret with username and password:
 
